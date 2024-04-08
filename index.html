@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome icons and CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Title -->
+    <title>MovieFever</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Logo section -->
+      <div class="logo">
+        <div class="container">
+          <p>MovieFever</p>
+        </div>
+        <!-- Liked movies link -->
+        <a id="favourites" href="liked.html">
+          <i style="color: crimson" class="fa-solid fa-thumbs-up"></i> LIKED
+        </a>
+      </div>
+
+      <!-- Search container -->
+      <div class="search-container">
+        <div class="search-element">
+          <!-- Search input -->
+          <h3>Find Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search For Movie ..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
+
+          <!-- Search list -->
+          <div class="search-list" id="search-list">
+            <!-- List of search results -->
+          </div>
+        </div>
+      </div>
+      <!-- End of search container -->
+
+      <!-- Result container -->
+      <div class="container">
+        <div class="result-container">
+          <!-- Result grid -->
+          <div class="result-grid" id="result-grid">
+            <!-- Movie information -->
+            <div class="movie-poster">
+              <!-- Movie poster image -->
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg"
+                alt="movie poster"
+              />
+            </div>
+            <div class="movie-info">
+              <!-- Movie details -->
+            </div>
+          </div>
+          <!-- Button to add movie to liked list -->
+          <button id="add-to-liked" onclick="{}">
+            <i class="fa-solid fa-heart"></i> Give a Like
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

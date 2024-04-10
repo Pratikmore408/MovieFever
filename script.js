@@ -4,8 +4,6 @@ const searchList = document.getElementById("search-list");
 const resultGrid = document.getElementById("result-grid");
 const addToLiked = document.querySelector("#add-to-liked");
 
-console.log("script lodded");
-
 // Function to load movies from the API
 async function loadMovies(findTitle) {
   const URL = `https://omdbapi.com/?s=${findTitle}&page=1&apikey=9fa44dd7`;

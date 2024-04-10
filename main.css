@@ -244,6 +244,13 @@ img {
   color: transparent;
 }
 
+.movie-info .movie-title {
+  background: linear-gradient(to right, white, darkred);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .movie-info .movie-misc-info b {
   background: linear-gradient(to right, white, darkred);
   -webkit-background-clip: text;
